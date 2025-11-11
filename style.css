@@ -43,8 +43,7 @@ h2 {
 .lead {
     font-size: 1.25rem;
     font-weight: 400;
-    color: #fff;
-    /* Medium gray */
+    color: #7D7F7C;
 }
 
 /* --- Utility & Theme --- */
@@ -104,6 +103,11 @@ h2 {
 .navbar-brand {
     font-weight: 700;
     color: #1a202c;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
 }
 
 .nav-link {
