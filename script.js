@@ -32,3 +32,34 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Select the form
+    const form = document.querySelector(".hero-form");
+
+    // Handle form submission
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // prevent page reload
+
+        // Get all input values
+        const fullName = form.querySelector('input[placeholder="Full Name"]').value;
+        const email = form.querySelector('input[placeholder="Work Email"]').value;
+        const phone = form.querySelector('input[placeholder="Phone Number"]').value;
+        const website = form.querySelector('input[placeholder="Company Website"]').value;
+
+        // Log values to console
+        // console.log("Form Data:");
+        // console.log("Full Name:", fullName);
+        // console.log("Work Email:", email);
+        // console.log("Phone Number:", phone);
+        // console.log("Company Website:", website);
+
+        let formData = {
+            fullName: fullName,
+            email: email,
+            phone: phone,
+            website: website
+        };
+        console.log(formData);
+    });
+});
